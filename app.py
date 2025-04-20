@@ -3,8 +3,16 @@ import pandas as pd
 import joblib
 import spacy
 import gradio as gr
+from spacy.cli import download
 
-nlp = spacy.load("en_core_web_sm")
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except IOError:
+   
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
+
 
 # Load model/vectorizer
 model = joblib.load('email_classifier.pkl')
