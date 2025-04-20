@@ -3,10 +3,8 @@ scikit-learn
 pandas
 joblib
 numpy
-tqdm
-
-# Use older spaCy version (compatible with HF Spaces, no build required)
 spacy==3.5.4
+pydantic==1.10.12
 
-# Prebuilt spaCy English model (DO NOT try to install via python script)
+# Prebuilt English NER model for spaCy
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
