@@ -5,5 +5,7 @@ joblib
 numpy
 pydantic
 spacy
+en-core-web-sm
+
 
 
