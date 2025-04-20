@@ -1,0 +1,9 @@
+gradio
+scikit-learn
+pandas
+joblib
+numpy
+
+spacy==3.5.4
+# force spaCy to respect this constraint
+--constraint constraints.txt
