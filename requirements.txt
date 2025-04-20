@@ -1,10 +1,12 @@
 gradio
 scikit-learn
 pandas
-spacy
 joblib
 numpy
 tqdm
 
-# Install spaCy model directly from URL
+# Use older spaCy version (compatible with HF Spaces, no build required)
+spacy==3.5.4
+
+# Prebuilt spaCy English model (DO NOT try to install via python script)
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
